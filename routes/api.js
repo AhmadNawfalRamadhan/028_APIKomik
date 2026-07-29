@@ -13,6 +13,8 @@ router.post('/login', userController.login);
 router.get('/komik', komikController.getAllKomik);
 router.get('/komik/:id', komikController.getKomikById);
 
+// Genre
+router.get('/genre', genreController.getAllGenres);
 
 //protected
 router.post('/komik', authMiddleware, komikController.createKomik);
